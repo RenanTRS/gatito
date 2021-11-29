@@ -49,3 +49,24 @@ $dark-grey: #464646;
 .header__menu .header__list .menu__links .menu__link:hover{
     color: $purple;
 }
+
+.footer{
+    text-align: center;
+    
+    padding: 20px 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: absolute;
+    
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer .footer__logo{
+    max-width: 100px;
+}
+.footer .footer__txt{
+    margin: auto;
+    font-size: 14px;
+}

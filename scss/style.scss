@@ -4,50 +4,60 @@ $dark-grey: #464646;
 
 .header{
     font-family: Arial, Helvetica, sans-serif;
-}
-.header__logo{
-    text-align: center;
-}
-.header__logo .header__img{
-    max-width: 350px;
-}
-.header__menu .header__list{
-    display: flex;
-    justify-content: center;
 
-    border-top: 1px solid $light-grey;
-    border-bottom: 1px solid $light-grey;
+    &__logo{
+        text-align: center;
+    }
+    &__img{
+        max-width: 350px;
+    }
 
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 0;
-    
-    width: 80%;
-}
-.header__menu .header__list .menu__links{
-    position: relative;
-}
-.header__menu .header__list .menu__links:not(:last-child)::after{
-    content: "";
-    position: absolute;
+    .menu{
+        &__list{
+            display: flex;
+            justify-content: center;
+        
+            border-top: 1px solid $light-grey;
+            border-bottom: 1px solid $light-grey;
+        
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 0;
+            
+            width: 80%; 
+        }
 
-    top: 0;
-    bottom: 0;
-    right: -3px;
+        &__links{
+            position: relative;
 
-    margin: auto;
+            &:not(:last-child)::after{
+                content: "";
+                position: absolute;
+                
+                top: 0;
+                bottom: 0;
+                right: -3px;
+                
+                margin: auto;
+                
+                height: 15px;
+                width: 1px;
+                
+                background-color: $light-grey;
+            }
+        }
 
-    height: 15px;
-    width: 1px;
-    
-    background-color: $light-grey;
-}
-.header__menu .header__list .menu__links .menu__link{
-    padding: 0 25px;
-    color: $dark-grey;
-}
-.header__menu .header__list .menu__links .menu__link:hover{
-    color: $purple;
+        &__link{
+            padding: 0 25px;
+            color: $dark-grey;
+
+            &:hover{
+                color: $purple;
+
+            }
+        }
+
+    }
 }
 
 .footer{
@@ -62,11 +72,13 @@ $dark-grey: #464646;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-}
-.footer .footer__logo{
-    max-width: 100px;
-}
-.footer .footer__txt{
-    margin: auto;
-    font-size: 14px;
+
+    &__logo{
+        max-width: 100px;
+    }
+
+    &__txt{
+        margin: auto;
+        font-size: 14px;
+    }
 }

@@ -29,3 +29,41 @@ $dark-grey: #464646;
 ### Comentário:
 "//" ou "/**/" comentários normais  
 "///" comentário para documentação
+
+# Aula 2: Regras de estilo e sintaxe  
+## Nesting (Agrupamento) e Parent Selector &: 
+```scss
+header{
+	font-family: Arial, sans-serif;
+
+	&__logo{
+		text-align: center;
+	}
+	.menu{
+		&:not(:last-child)::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			.
+			.
+			.
+		}
+	}
+}
+```
+- Com sass é possível colocar as classes dos seus filhos dentro, ajuda na organização do código, se as classes estiverem no formato BEM, e possível utilizar o & para deixar o código mais limpo;  
+
+## Estilizando componentes da página:  
+### interpolação:  
+- Semelhante ao ${variavel} do js, no sass é #{$vairavel}
+```scss
+	$img-width: 45%;
+
+	&__img{
+		width: $img-width;
+	}
+	&__txt{
+		width: calc(100% - #{$img-width});
+	}
+```

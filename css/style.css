@@ -1,3 +1,11 @@
+.article .breadcrumb__link, .main .sidebar__post-title {
+  text-decoration: none;
+}
+
+.article .breadcrumb__link:hover, .main .sidebar__post-title:hover {
+  text-decoration: underline;
+}
+
 .header {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -156,6 +164,51 @@
 .main__a:hover {
   color: #A050BE;
 }
+.main__sidebar {
+  width: 25%;
+  padding: 40px 10px;
+}
+.main .sidebar__top {
+  border: 1px solid #eaeaeb;
+  padding: 15px 20px;
+}
+.main .sidebar__title {
+  background-color: #fabe50;
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding: 10px 20px;
+  margin: 0;
+}
+.main .sidebar__posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main .sidebar__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 0;
+}
+.main .sidebar__list:not(:last-child) {
+  border-bottom: 1px dashed #eaeaeb;
+}
+.main .sidebar__img {
+  width: 40%;
+}
+.main .sidebar__details {
+  width: 50%;
+  padding-left: 10px;
+}
+.main .sidebar__post-title {
+  font-size: 14px;
+  color: #A050BE;
+}
+.main .sidebar__post-date {
+  font-size: 12px;
+  margin: 5px 0 0 0;
+}
 
 .about {
   width: 80%;
@@ -212,7 +265,7 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.about__img2 {
+.about__img-description {
   width: 45%;
 }
 .about__txt {
@@ -222,6 +275,69 @@
   font-size: 16px;
   padding: 10px 20px;
   color: #464646;
+}
+
+.article {
+  width: 80%;
+  margin: 0 auto 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.article__title {
+  background-color: #eaeaeb;
+  text-align: center;
+  padding: 20px;
+}
+.article__h1 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #464646;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 0%;
+  margin-right: 0;
+}
+.article .breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article .breadcrumb__link {
+  font-size: 12px;
+  color: #464646;
+}
+.article .breadcrumb__link:hover {
+  color: #A050BE;
+}
+.article .breadcrumb__img {
+  width: 10px;
+  margin: 8px;
+}
+.article__img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.article__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article__date {
+  margin: 0 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+.article__tag {
+  font-size: 14px;
+  padding: 5px 7px;
+  margin: 0 10px;
+  color: #A050BE;
+  border: 1px solid #A050BE;
+}
+.article__content {
+  font-weight: 100;
+  font-size: 14px;
+  color: #464646;
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

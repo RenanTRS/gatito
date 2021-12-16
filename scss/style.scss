@@ -331,6 +331,9 @@ $img-width: 45%;
 }
 
 .about{
+    @include for-phone-only{
+        width: 90%;
+    }
     width: 80%;
 
     margin: 0 auto 40px;
@@ -394,6 +397,13 @@ $img-width: 45%;
         width: 70%;
 
         margin: 30px auto;
+
+        @include for-phone-only{
+            width: 90%;
+        }
+        @include for-tablet-only{
+            width: 80%;
+        }
     }
     &__split{
         display: flex;
@@ -403,9 +413,19 @@ $img-width: 45%;
     }
     &__img-description{
         width: $img-width;
+
+        @include for-phone-only{
+            width: 80%;
+        }
     }
     &__txt{
         width: calc(100% - #{$img-width});
+
+        @include for-phone-only{
+            width: 90%;
+
+            text-align: center;
+        }
     }
     &__p{
         font-size: 16px;
@@ -417,6 +437,11 @@ $img-width: 45%;
 }
 
 .article{
+
+    @include for-phone-only{
+        width: 90%;
+    }
+    
     width: 80%;
     
     margin: 0 auto 40px;

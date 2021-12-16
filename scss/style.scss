@@ -24,6 +24,20 @@ $img-width: 45%;
     #{$property}: $jty-cnt;
 }
 
+//media queries
+/*Mobile*/
+@mixin for-phone-only{
+    @media (max-width: 767.98px){ @content; }
+}
+/*Tablet*/
+@mixin for-tablet-only{
+    @media (min-width: 768px) and (max-width: 1199.98px) { @content; }
+}
+/*Desktop*/
+@mixin for-desktop-only{
+    @media (min-width: 1200px) { @content; }
+}
+
 .header{
     font-family: Arial, Helvetica, sans-serif;
 
@@ -44,13 +58,31 @@ $img-width: 45%;
         
             margin-left: auto;
             margin-right: auto;
-            padding: 20px 0;
-            
-            width: 80%; 
+
+            @include for-phone-only{
+                flex-wrap: wrap;
+
+                padding: 15px 0;
+
+                width: 90%;
+            }
+            @include for-tablet-only{
+                padding: 20px 0;
+
+                width: 80%;
+            }
+            @include for-desktop-only{
+                padding: 20px 0;
+
+                width: 80%;
+            }
         }
 
         &__links{
             position: relative;
+            @include for-phone-only{
+                padding: 5px 0;
+            }
 
             &:not(:last-child)::after{
                 content: "";
@@ -113,6 +145,9 @@ $img-width: 45%;
     font-family: Arial, Helvetica, sans-serif;
 
     &__content{
+        @include for-phone-only{
+            width: 100%;
+        }
         width: 70%;
 
         padding: 40px 8px;

@@ -38,6 +38,14 @@ $img-width: 45%;
     @media (min-width: 1200px) { @content; }
 }
 
+//Funções
+@function calculateRem($size){
+    @return $size / 16px * 1rem;
+}
+@mixin fontSize($size){
+    font-size: calculateRem($size);
+}
+
 .header{
     font-family: Arial, Helvetica, sans-serif;
 
@@ -133,7 +141,8 @@ $img-width: 45%;
 
     &__txt{
         margin: auto;
-        font-size: 14px;
+
+        @include fontSize(14px);
     }
 }
 
@@ -162,7 +171,7 @@ $img-width: 45%;
     }
     &__title{
         text-decoration: none;
-        font-size: 22px;
+        @include fontSize(22px);
         letter-spacing: 1.5;
         
         color: $dark-grey;
@@ -182,11 +191,11 @@ $img-width: 45%;
     &__date{
         margin: 0 10px;
 
-        font-size: 12px;
+        @include fontSize(12px);
         font-style: italic;
     }
     &__tag{
-        font-size: 14px;
+        @include fontSize(14px);
 
         padding: 5px 7px;
         margin: 0 10px;
@@ -208,12 +217,12 @@ $img-width: 45%;
         
         max-width: 650px;
 
-        font-size: 14px;
+        @include fontSize(14px);
     }
     &__btn{
         text-decoration: none;
 
-        font-size: 16px;
+        @include fontSize(16px);
         letter-spacing: 1.6;
 
         color: $purple;
@@ -243,7 +252,7 @@ $img-width: 45%;
         border-right: 1px solid $light-grey;
     }
     &__p{
-        font-size: 14px;
+        @include fontSize(14px);
 
         color: $dark-grey;
 
@@ -256,7 +265,7 @@ $img-width: 45%;
     &__a{
         text-decoration: none;
         
-        font-size: 14px;
+        @include fontSize(14px);
 
         color: $dark-grey;
 
@@ -313,7 +322,7 @@ $img-width: 45%;
             padding-left: 10px;
         }
         &__post-title{
-            font-size: 14px;
+            @include fontSize(14px);
             
             color: $purple;
 
@@ -323,7 +332,7 @@ $img-width: 45%;
             }
         }
         &__post-date{
-            font-size: 12px;
+            @include fontSize(12px);
 
             margin: 5px 0 0 0;
         }
@@ -348,7 +357,7 @@ $img-width: 45%;
         padding: 20px;
     }
     &__h1{
-        font-size: 22px;
+        @include fontSize(22px);
         letter-spacing: 1px;
         
         color: $dark-grey;
@@ -365,14 +374,15 @@ $img-width: 45%;
         align-items: center;
 
         &__link{
-            font-size: 12px;
+            @include fontSize(12px);
+
             text-decoration: none;
 
             color: $dark-grey;
 
             &:hover{
                 text-decoration: underline;
-                columns: $purple;
+                color: $purple;
             }
         }
         &__img{
@@ -390,7 +400,7 @@ $img-width: 45%;
     &__intro{
         font-weight: 100;
         text-align: center;
-        font-size: 16px;
+        @include fontSize(16px);
 
         color: $dark-grey;
 
@@ -428,7 +438,7 @@ $img-width: 45%;
         }
     }
     &__p{
-        font-size: 16px;
+        @include fontSize(16px);
 
         padding: 10px 20px;
 
@@ -456,7 +466,7 @@ $img-width: 45%;
         padding: 20px;
     }
     &__h1{
-        font-size: 22px;
+        @include fontSize(22px);
         letter-spacing: 1px;
 
         color: $dark-grey;
@@ -471,7 +481,7 @@ $img-width: 45%;
         align-items: center;
 
         &__link{
-            font-size: 12px;
+            @include fontSize(12px);
 
             @extend %no-decoration;
 
@@ -501,11 +511,11 @@ $img-width: 45%;
     &__date{
         margin: 0 10px;
         
-        font-size: 12px;
+        @include fontSize(12px);
         font-style: italic;
     }
     &__tag{
-        font-size: 14px;
+        @include fontSize(14px);
 
         padding: 5px 7px;
         margin: 0 10px;
@@ -516,7 +526,7 @@ $img-width: 45%;
     }
     &__content{
         font-weight: 100;
-        font-size: 14px;
+        @include fontSize(14px);
 
         color: $dark-grey;
         

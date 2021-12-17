@@ -86,7 +86,7 @@
 }
 .footer__txt {
   margin: auto;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .main {
@@ -112,7 +112,7 @@
 }
 .main__title {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1.375rem;
   letter-spacing: 1.5;
   color: #464646;
 }
@@ -128,11 +128,11 @@
 }
 .main__date {
   margin: 0 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: italic;
 }
 .main__tag {
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 5px 7px;
   margin: 0 10px;
   color: #A050BE;
@@ -149,11 +149,11 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 650px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .main__btn {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 1.6;
   color: #A050BE;
   background-color: #fabe50;
@@ -176,7 +176,7 @@
   border-right: 1px solid #eaeaeb;
 }
 .main__p {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #464646;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -186,7 +186,7 @@
 }
 .main__a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #464646;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -232,11 +232,11 @@
   padding-left: 10px;
 }
 .main .sidebar__post-title {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #A050BE;
 }
 .main .sidebar__post-date {
-  font-size: 12px;
+  font-size: 0.75rem;
   margin: 5px 0 0 0;
 }
 
@@ -256,7 +256,7 @@
   padding: 20px;
 }
 .about__h1 {
-  font-size: 22px;
+  font-size: 1.375rem;
   letter-spacing: 1px;
   color: #464646;
   margin-top: 5px;
@@ -270,13 +270,13 @@
   align-items: center;
 }
 .about .breadcrumb__link {
-  font-size: 12px;
+  font-size: 0.75rem;
   text-decoration: none;
   color: #464646;
 }
 .about .breadcrumb__link:hover {
   text-decoration: underline;
-  columns: #A050BE;
+  color: #A050BE;
 }
 .about .breadcrumb__img {
   width: 10px;
@@ -289,7 +289,7 @@
 .about__intro {
   font-weight: 100;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   color: #464646;
   width: 70%;
   margin: 30px auto;
@@ -328,7 +328,7 @@
   }
 }
 .about__p {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 10px 20px;
   color: #464646;
 }
@@ -349,7 +349,7 @@
   padding: 20px;
 }
 .article__h1 {
-  font-size: 22px;
+  font-size: 1.375rem;
   letter-spacing: 1px;
   color: #464646;
   margin-top: 5px;
@@ -363,7 +363,7 @@
   align-items: center;
 }
 .article .breadcrumb__link {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #464646;
 }
 .article .breadcrumb__link:hover {
@@ -384,11 +384,11 @@
 }
 .article__date {
   margin: 0 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: italic;
 }
 .article__tag {
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 5px 7px;
   margin: 0 10px;
   color: #A050BE;
@@ -396,7 +396,7 @@
 }
 .article__content {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #464646;
   padding: 10px 20px;
 }
